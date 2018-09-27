@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="icon" type="image/jpg" href="dist/image/pet.png">
+  <title>ONG PET-LOVE</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://file.myfontastic.com/k3QAhnjJnwiJxNRgiq5JqM/icons.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 </head>
+
+
 <body>
-  <p>my page</p>
+
+  <div class=" row container-header d-flex justify-content-between align-items-center">
+    <div class="col-3">
+      <img class='logo' src="dist/image/pet.png" alt="">
+    </div>
+    <div class=" col-3 title-pg">
+      <h1>ONG PET-LOVE</h1>
+    </div>
+    <div class="col-3 pata d-flex justify-content-end">
+      <img class='botao-pata' src="dist/image/pata.jpg" alt="">
+      <div id="selecao-adotar"></div>
+    </div>
+  </div>
+
+  <nav class=" row nav-menu d-flex align-items-center">
+    <div class="col nav1"></div>
+    <div class="col nav1">
+      <a href="/caes "> CÃES</a>
+    </div>
+    <div class="col nav1">
+
+      <a href="/gatos">GATOS</a>
+
+    </div>
+    <div class="col nav1">
+      <a href="/historia">HISTÓRIA</a>
+    </div>
+    <div class="col nav1">
+      <a id='carrega-produtos' href="/produtos">PRODUTOS</a>
+    </div>
+    <div class="col nav1">
+      <a href="/adotados">ADOTADOS</a>
+    </div>
+    <div class="col nav1">
+      <a href="/ajuda" data-toggle="modal" data-target="#doacao">AJUDAR</a>
+    </div>
+    <div class="col nav1"></div>
+  </nav>
+
+  <p></p>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle"> ESSE PODE SER NOVO AMIGO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body teste ">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="clickAdocao()">ADOTAR</button>
+          <button type="button" class="btn btn-primary">CONHECER MAIS!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL DOACAO -->
+
+  <div class="modal fade" id="doacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center flex-column">
+          <img src="dist/image/pet.png" width="60px">
+          <h5 class="modal-title" id="exampleModalCenterTitle">DOAÇÕES</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body form-adocao">
+
+
+          <div class="container-form-pgto">
+            <div class="form-donation d-flex align-items-center flex-column">
+
+              <p class="text-donation">Selecione sua forma de doar:</p>
+
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <section class="row">
+    <div class="col-sm-1"></div>
+    <main class="col-sm-10"></main>
+    <div class="col-sm-1"></div>
+  </section>
+
+
+
+  <footer class="row footer clearfix">
+    <i class="icon-facebook-circled"></i>
+    <i class="icon-linkedin-circled"></i>
+    <i class="icon-gplus-circled"></i>
+    <i class="icon-twitter-circled"></i>
+  </footer>
+
+
+
+
+
+
+  <script src="dist/routes.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

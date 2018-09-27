@@ -1,0 +1,92 @@
+.container-header{
+height: 80px; 
+}
+    
+.logo{
+height: 70px;   
+margin-left: 50px;
+}
+    
+.botao-pata{
+height: 50px;
+margin-right: 8px; 
+}
+     
+#selecao-adotar{
+color: red;
+margin: 0px;
+padding: 0px;
+}
+       
+.nav-menu{
+background-color: black;
+height: 40px;  
+}
+        
+.nav1 a{
+color: white;
+font-weight: bold;
+}
+    
+.fade{
+ background-image: url('./image/image.jpeg');    
+}
+    
+    
+.form-adocao{
+background-color: black;   
+color: white;
+}
+    
+.carousel-item img {
+height: 450px; 
+margin-top: 30px;   
+}
+    
+.container-carousel {
+background-image: url('../image/images.jpeg');
+height: 500px;
+}
+    
+.img-container{
+height: 200px;
+width: 200px;   
+border-radius: 8px;
+margin-left: 20px;
+margin-bottom: 40px;
+margin-top: 20px;
+background-color: black;
+}
+     
+.icon-facebook-circled, .icon-linkedin-circled, .icon-gplus-circled{
+ margin-right: 10px;   
+}
+
+.button-comprar{
+ margin-bottom: 40px; 
+ border-radius: 8px;
+ color: white;
+ background-color: black;   
+}
+    
+.imagens-produtos{
+height: 150px;
+width: 150px;
+margin-bottom: 20px;
+}
+
+
+
+
+.footer{
+color: white;
+height: 60px;
+margin-top: 60vh;
+margin-right: 10px;
+background-color: black;    
+display: flex;
+justify-content: center;
+align-items: center;
+}
+    
+    
