@@ -13,17 +13,16 @@ function index() {
 }
 
 function caes() {
-    const renderImageDogs = $("main").html(imagensDog())
+    const renderImageDogs = $('main').html(imagensDog())
 }
 
 function gatos() {
-    const rederGatos = $('main').html($('#teste'))
+    const rederGatos = $('main').html(carregaGatos())
 }
 
 
 function historia() {
-    document.querySelector('p')
-        .textContent = 'viewing historia';
+    const rederhistoria = $('main').html(carregaHistoria())
 }
 
 function produtos() {
@@ -31,15 +30,19 @@ function produtos() {
 }
 
 function adotados() {
-    document.querySelector('p')
-        .textContent = 'viewing adotados';
+    const renderProdutos = $('main').html(carregaPetsAdotados());
+
 }
 
 function ajuda() {
-    document.querySelector('p')
-        .textContent = '';
+    const renderAjuda = $('main').html(renderIndex());
 }
 
+
+function renderIndex() {
+    let index = `<iframe width="560" height="315" src="https://www.youtube.com/embed/dVTXobP4XYU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`
+    return index
+}
 
 
 // imagens api dog
@@ -93,7 +96,8 @@ function carregaProductsPet(data) {
 }
 
 function exibeProductsPet() {
-    let exibeImagem = $("main").html(`${produtos.map(doc => `
+    let exibeImagem = $("main").html(`<h1 class = 'title-produtos mb-5'> PRODUTOS PETS</h1>
+     ${produtos.map(doc => `
     <div class="col produto"><p><b>${doc.title}</b></p>
     <img class="imagens-produtos" src=${doc.thumbnail}> 
     <p>R$ ${doc.price}</p>
@@ -101,3 +105,35 @@ function exibeProductsPet() {
 }
 
 
+function carregaGatos() {
+    let gatoss = `<div>
+<img class="imagens-produtos" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
+<img class="imagens-produtos" src=dist/image/gatos/cat3.jpg>
+<img class="imagens-produtos" src=dist/image/gatos/cat4.jpg>
+<img class="imagens-produtos" src=dist/image/gatos/th.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/thr.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/th3.jpeg>
+</div>`
+    return gatoss;
+}
+
+function carregaPetsAdotados() {
+    let adotados = `<div>
+<img class="imagens-produtos" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
+<img class="imagens-produtos" src=dist/image/gatos/adotado.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/adotado2.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/adotado3.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/adotado4.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/dog-adotado1.jpeg>
+<img class="imagens-produtos" src=dist/image/gatos/dog-adotado.jpeg>
+</div>`
+    return adotados;
+}
+
+function carregaHistoria() {
+    let renderHistoria = `
+<h1>teste</h1>
+<p>testesssssssssssssssssssss</p>
+`
+    return renderHistoria;
+}
