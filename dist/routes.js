@@ -40,7 +40,7 @@ function ajuda() {
 
 
 function renderIndex() {
-    let index = `<iframe width="560" height="315" src="https://www.youtube.com/embed/dVTXobP4XYU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`
+    let index = `<div class="d-flex justify-content-center mt-4 mb-3"><iframe width="700" height="400" src="https://www.youtube.com/embed/dVTXobP4XYU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`
     return index
 }
 
@@ -107,25 +107,25 @@ function exibeProductsPet() {
 
 function carregaGatos() {
     let gatoss = `<div>
-<img class="imagens-produtos" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
-<img class="imagens-produtos" src=dist/image/gatos/cat3.jpg>
-<img class="imagens-produtos" src=dist/image/gatos/cat4.jpg>
-<img class="imagens-produtos" src=dist/image/gatos/th.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/thr.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/th3.jpeg>
+<img class="imagens-cat" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
+<img class="imagens-cat" src=dist/image/gatos/cat3.jpg>
+<img class="imagens-cat" src=dist/image/gatos/cat4.jpg>
+<img class="imagens-cat" src=dist/image/gatos/th.jpeg>
+<img class="imagens-cat" src=dist/image/gatos/thr.jpeg>
+<img class="imagens-cat" src=dist/image/gatos/th3.jpeg>
 </div>`
     return gatoss;
 }
 
 function carregaPetsAdotados() {
     let adotados = `<div>
-<img class="imagens-produtos" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
-<img class="imagens-produtos" src=dist/image/gatos/adotado.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/adotado2.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/adotado3.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/adotado4.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/dog-adotado1.jpeg>
-<img class="imagens-produtos" src=dist/image/gatos/dog-adotado.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado2.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado3.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado4.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/dog-adotado1.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/dog-adotado.jpeg>
 </div>`
     return adotados;
 }
@@ -133,6 +133,14 @@ function carregaPetsAdotados() {
 function carregaHistoria() {
     let renderHistoria = `
 <h1>teste</h1>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
+<p>testesssssssssssssssssssss</p>
 <p>testesssssssssssssssssssss</p>
 `
     return renderHistoria;
