@@ -1,12 +1,13 @@
-page('/', index);
-page('/gatos', gatos);
-page('/caes', caes);
-page('/historia', historia);
-page('/produtos', produtos);
-page('/adotados', adotados);
-page('/ajuda', ajuda);
-page();
-
+$(document).ready(() => {
+    page('/', index);
+    page('/gatos', gatos);
+    page('/caes', caes);
+    page('/historia', historia);
+    page('/produtos', produtos);
+    page('/adotados', adotados);
+    page('/ajuda', ajuda);
+    page();
+});
 
 function index() {
     $("main").html(renderIndex());
@@ -106,7 +107,7 @@ function exibeProductsPet() {
 
 
 function carregaGatos() {
-    let gatoss = `<div>
+    let gatoss = `<div data-toggle="modal" data-target="#exampleModalCenter">
 <img class="imagens-cat" src=dist/image/gatos/filhote-de-gato-peludo-lindo-wallpaper-5426.jpg>
 <img class="imagens-cat" src=dist/image/gatos/cat3.jpg>
 <img class="imagens-cat" src=dist/image/gatos/cat4.jpg>
@@ -145,3 +146,15 @@ function carregaHistoria() {
 `
     return renderHistoria;
 }
+
+
+function imagensDog() {
+    const urls = 'https://dog.ceo/api/breeds/image/random/25';
+
+    $.get(urls, function (data) {
+        let imageDogApi = data.message.map(url => `<img class='img-container' src= ${url} data-toggle="modal" data-target="#exampleModalCenter">`);
+        $('main').html(imageDogApi);
+    });
+}
+
+
