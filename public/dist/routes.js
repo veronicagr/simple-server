@@ -114,6 +114,10 @@ function carregaGatos() {
 <img class="imagens-cat" src=dist/image/gatos/th.jpeg>
 <img class="imagens-cat" src=dist/image/gatos/thr.jpeg>
 <img class="imagens-cat" src=dist/image/gatos/th3.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado2.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado3.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/adotado4.jpeg>
+<img class="imagens-dogs" src=dist/image/gatos/dog-adotado1.jpeg>
 </div>`
     return gatoss;
 }
@@ -127,22 +131,22 @@ function carregaPetsAdotados() {
 <img class="imagens-dogs" src=dist/image/gatos/adotado4.jpeg>
 <img class="imagens-dogs" src=dist/image/gatos/dog-adotado1.jpeg>
 <img class="imagens-dogs" src=dist/image/gatos/dog-adotado.jpeg>
+<img class="imagens-cat" src=dist/image/gatos/th3.jpeg>
+<img class="imagens-cat" src=dist/image/gatos/th.jpeg>
+<img class="imagens-cat" src=dist/image/gatos/thr.jpeg>
 </div>`
     return adotados;
 }
 
 function carregaHistoria() {
     let renderHistoria = `
-<h1>teste</h1>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
-<p>testesssssssssssssssssssss</p>
+<h1>Nossa história</h1>
+<p>Nascemos do desejo de dar um lar á todos os animais carentes.</p>
+<p>Acreditamos que todos os animais tem direito a muito amor e carinnho.</p>
+<p>Estamos aqui hoje, para ajuda-los a encontrar alguém que os queiram bem e possa proporcionar todo amor e carinho que eles merecem. </p>
+<p>Com a ajudade de vocês poderemos mudar a história de vários peludinhos.</p>
+<p>Vamos fazer parte desta equipe!</p>
+<img class="imagens-historia" src=dist/image/th.jpeg>
 `
     return renderHistoria;
 }
